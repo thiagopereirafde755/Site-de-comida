@@ -1,0 +1,99 @@
+body {
+    background-color: #f5f5dc;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(117, 19, 19);
+}
+
+.caixa p {
+    font-size: 18px;
+}
+
+.caixa {
+    display: flex;
+    gap: 27px;
+    padding: 22px;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.quadro-imagem p {
+    margin-top: 10px;
+    text-align: center;
+}
+.quadro-imagem {
+    background-color: #f5f5dc;
+    padding: 8px;
+    border: 2px solid rgb(107, 104, 104);
+    box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 20px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+    max-width: 33%; 
+}
+
+.quadro-imagem img {
+    width: 100%;
+    height: 250px;
+    border: 1px solid rgb(45, 8, 70);
+
+}
+
+
+@media (max-width: 768px) {
+    .caixa {
+        flex-direction: column; 
+        gap: 20px;
+        align-items: center; 
+    }
+
+    .quadro-imagem {
+        flex: none;
+        width: 100%; 
+        max-width: 100%; 
+    }
+
+    .quadro-imagem img {
+        height: 160px; 
+    }
+}
+
+.caixa img {
+    border-radius: 30px;
+}
+
+.img-clicavel {
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.img-clicavel:hover {
+    transform: scale(1.08); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+@media (max-width: 768px) {
+    .img-clicavel {
+        transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    }
+
+    .quadro-imagem img {
+        width: 100%;
+        height: 160px;
+        border: 1px solid rgb(45, 8, 70);
+    }    
+    
+    .img-clicavel:hover {
+        transform: none; 
+        box-shadow: none; 
+    }
+}

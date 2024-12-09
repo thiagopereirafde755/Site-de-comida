@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/logo-1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <title>Adicionar Congelado</title>
+    
+</head>
+<body>
+    <style>
+        footer {
+
+bottom: 10px;
+text-align: center;
+width: 100%;
+font-size: 17px;
+background-color: #f5f5dc;
+color: #000000;
+}
+    </style>
+    <a href="adm.html" style="position: absolute; top: 10px; left: 10px;">
+        <img src="../img/voltar.png" alt="Voltar"  class="volta-icon">
+    </a>
+
+    <form action="congelado.php" method="POST" enctype="multipart/form-data">
+        <h1>Adicionar Novo Congelado</h1>
+        <br><br>
+        <label for="nome">Nome do Produto:</label><br>
+        <input type="text" placeholder="Nome do Produto" id="nome" name="nome" required><br><br>
+
+        <label for="preco">Preço (R$):</label><br>
+        <input type="text" placeholder="Preço" id="preco" name="preco" required pattern="^\d+(\.\d{1,2})?$"title="Apenas numero e ponto" required><br><br>
+
+        <label for="quantidade">Quantidade (Kg, Unid ou Cento):</label><br>
+        <input type="text" placeholder="Coloque Kg ,Unid ou cento" id="quantidade" name="quantidade" required><br><br>
+
+        <label class="btn-file" for="imagem">Escolher imagem</label><br>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required><br><br>
+
+        <label for="mensagem_whatsapp">Mensagem para WhatsApp:</label><br>
+        <input type="text" placeholder="Mensagem para WhatsApp" id="mensagem_whatsapp" name="mensagem_whatsapp" required><br><br>
+
+        <input type="submit" value="Adicionar Produto">
+    </form>
+    <br>
+    <footer>
+        <p>Desenvolvido por:<a href="https://www.instagram.com/thiagopereira_.7/" target="_blank"> Thiago Pereira</p></a>  
+      </footer>
+</body>
+</html>
