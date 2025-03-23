@@ -18,7 +18,7 @@ Este é um projeto escolar desenvolvido como parte de um trabalho de **empreende
 ## **Confira o Projeto**  
 <a href="https://fabrica-de-sabores.netlify.app/">Confira o projeto aqui</a>
 
-##
+
 
 ## **Imagens do Projeto**
 
