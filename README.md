@@ -15,6 +15,9 @@ Este é um projeto escolar desenvolvido como parte de um trabalho de **empreende
 - **JavaScript**: Para funcionalidades interativas no frontend.
 - **PHP**: Para gerenciamento do backend e conexão com o banco de dados.
 
+## **Confira o Projeto**
+<a href="https://fabrica-de-sabores.netlify.app/"><p>Confira o projeto aqui</p></a>
+
 ## **Imagens do Projeto**
 
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
